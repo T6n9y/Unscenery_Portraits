@@ -36,11 +36,11 @@ function Home() {
   return (
     <section
       className="pt-20 text-black text-center"
-      style={{ backgroundColor: '		#ffffba' }}
+      style={{ backgroundColor: 'white' }}
     >
       <div className="container mx-auto px-4 py-20">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
-        <p className="text-lg md:text-2xl mb-8">
+        <p className="texwhitetext-2xl mb-8">
           Hi, I’m Tanay. I capture moments, emotions, and stories through my lens. From portraits to events,
           every shot is crafted to create lasting memories.
           <br />
@@ -52,7 +52,7 @@ function Home() {
           {images.map((image) => (
             <div
               key={image.id}
-              className="cursor-pointer overflow-hidden rounded-lg shadow-lg bg-[	#faebd7]"
+              className="cursor-pointer overflow-hidden rounded-lg shadow-lg bg-[#ffdfba]"
               onClick={() => setSelectedImage(image.src)} // Set the selected image on click
             >
               <img
