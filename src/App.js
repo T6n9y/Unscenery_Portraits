@@ -7,6 +7,8 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import './styles/index.css';
+
 
 function App() {
   return (
