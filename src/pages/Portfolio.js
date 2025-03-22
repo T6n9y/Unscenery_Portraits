@@ -32,7 +32,8 @@ function Portfolio() {
         "/images/assets/event1.jpg",
         "/images/assets/event2.jpg",
         "/images/assets/event3.jpg",
-        "/images/assets/event4.jpg"
+        "/images/assets/event4.jpg",
+        "/images/assets/event5.jpg"
       ]
     }
   ];
@@ -112,7 +113,7 @@ function Portfolio() {
           <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
             <div
               ref={modalRef} // Attach the modal ref here
-              className="bg-white p-6 rounded-lg shadow-lg max-w-3xl w-full"
+              className="bg-white p-6 rounded-lg shadow-lg max-w-3xl w-full relative"
             >
               {/* Carousel Image */}
               <div className="flex justify-center items-center relative">
@@ -125,7 +126,11 @@ function Portfolio() {
                 <img
                   src={selectedProject.images[currentImageIndex]}
                   alt={`Carousel ${currentImageIndex}`}
-                  className="w-full h-auto object-contain rounded-lg"
+                  className="w-full h-auto object-contain rounded-lg transition-opacity duration-500 ease-in-out opacity-100"
+                  style={{
+                    transition: "opacity 0.5s ease-in-out", // Smooth transition for images
+                    opacity: 1
+                  }}
                 />
                 <button
                   onClick={nextImage}
