@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url('/images/photo4.jpg')` }}>
-      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay for contrast */}
+    <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url('/images/photo9.jpg')` }}>
+      <div className="absolute inset-0 bg-black opacity-30"></div> {/* Overlay for contrast */}
 
       {/* Left-side navigation, positioned at bottom-left */}
       <div className="absolute bottom-0 left-0 p-6 text-white z-20">

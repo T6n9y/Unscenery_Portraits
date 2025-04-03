@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="fixed w-full z-50 top-0 left-0 p-6 flex justify-between items-center text-white bg-transparent">
       {/* Business Name */}
-      <div className="font-bold text-4xl">
+      <div className="flex-grow text-center font-bold text-2xl">
         <Link to="/" className="text-white">
           Unscenery Portraits
         </Link>

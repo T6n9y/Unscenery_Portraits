@@ -3,8 +3,7 @@ import { FaInstagram, FaFacebookF, FaPinterestP } from 'react-icons/fa'; // Impo
 
 function About() {
   return (
-    <section className="relative pt-20 pb-20 bg-cover bg-center" style={{ backgroundImage: `url('/images/your-image.jpg')` }}>
-      <div className="absolute inset-0 bg-black opacity-60"></div> {/* Dark overlay */}
+    <section className="relative pt-20 pb-20 bg-grey bg-cover bg-center" style={{ backgroundImage: `url('/images/photo9.jpg')` }}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 z-10">
         {/* Left Column with Text */}
         <div className="w-full md:w-1/2 text-left">
@@ -16,7 +15,7 @@ function About() {
         </div>
 
         {/* Right Column with Image */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 relative bg-transparent">
           <img
             src="/images/Tanay/tanay1.jpg"  // Replace with your image path
             alt="Tanay's Portrait"
@@ -27,16 +26,16 @@ function About() {
 
       {/* Social Media Icons */}
       <div className="text-center mt-8 z-10">
-        <p className="text-2xl font-semibold mb-4 text-white">Let’s Come Together!</p>
+        <p className="text-2xl font-semibold mb-4 text-black">Let’s Come Together!</p>
         <div className="flex justify-center space-x-6">
           <a href="https://www.instagram.com/un_scenery" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-3xl text-white hover:text-blue-600" />
+            <FaInstagram className="text-3xl text-black hover:text-blue-600" />
           </a>
           <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF className="text-3xl text-white hover:text-blue-600" />
+            <FaFacebookF className="text-3xl text-black hover:text-blue-600" />
           </a>
           <a href="https://www.pinterest.com/yourprofile" target="_blank" rel="noopener noreferrer">
-            <FaPinterestP className="text-3xl text-white hover:text-red-600" />
+            <FaPinterestP className="text-3xl text-black hover:text-red-600" />
           </a>
         </div>
       </div>
